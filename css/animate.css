@@ -114,3 +114,59 @@
     transform: rotate3d(0, 1, 0, 360deg);
   }
 }
+@keyframes supported_cube {
+  from {
+    background: url("../img/blender.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    background: url("../img/armory3d.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  to {
+    background: url("../img/blender.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+}
+@keyframes supported_keyboard {
+  from {
+    background: url("../img/develnext.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  11% {
+    background: url("../img/arduino.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  22% {
+    background: url("../img/php.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  33% {
+    background: url("../img/mit.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  44% {
+    background: url("../img/css.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  55% {
+    background: url("../img/javafx.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  66% {
+    background: url("../img/icons8.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  77% {
+    background: url("../img/cpp.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  88% {
+    background: url("../img/mshp.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  to {
+    background: url("../img/develnext.webp") 50% / contain no-repeat;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}

@@ -116,6 +116,9 @@ section {
 .name {
   width: 100px;
 }
+.name_increased {
+  width: 120px;
+}
 .app_icon {
   border-radius: 10px;
   transition: 0.5s;
@@ -338,6 +341,12 @@ section {
 }
 #monuments_img {
   background-image: url("../img/monuments.webp");
+}
+#keyboard_img {
+  background-image: url("../img/keyboard.webp");
+}
+#cube_img {
+  background-image: url("../img/cube.webp");
 }
 #phone {
   background-image: url("../img/phone.webp");

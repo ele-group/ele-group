@@ -151,10 +151,27 @@ h1 {
 #supported_unit_9 {
   background: url("../img/kenney.webp") 50% / contain no-repeat;
 }
+#supported_unit_10 {
+  background: url("../img/cpp.webp") 50% / contain no-repeat;
+}
+#supported_unit_11 {
+  background: url("../img/arduino.webp") 50% / contain no-repeat;
+}
+#supported_unit_12 {
+  background: url("../img/mit.webp") 50% / contain no-repeat;
+}
 .supported_mobile {
   height: 50px;
   width: 100vw;
   animation: supported 30s linear infinite;
+  transform: rotate3d(0, 1, 0, 0deg);
+  margin-bottom: 2vh;
+  transition: 2s;
+}
+.supported_cube {
+  height: 50px;
+  width: auto;
+  animation: supported_cube 5s linear infinite;
   transform: rotate3d(0, 1, 0, 0deg);
   margin-bottom: 2vh;
   transition: 2s;
@@ -217,6 +234,9 @@ h1 {
   }
   .supported_mobile {
     display: none;
+  }
+  .supported_cube {
+    height: 100px;
   }
   #center_text {
     font-size: 2rem;
