@@ -176,6 +176,10 @@ h1 {
   margin-bottom: 2vh;
   transition: 2s;
 }
+.download_btn {
+  display: none;
+  width: 200px;
+}
 @media (min-width: 768px) {
   main {
     height: auto;
@@ -237,6 +241,11 @@ h1 {
   }
   .supported_cube {
     height: 100px;
+  }
+  .download_btn {
+    display: inline-block;
+    position: absolute;
+    right: 200px;
   }
   #center_text {
     font-size: 2rem;
