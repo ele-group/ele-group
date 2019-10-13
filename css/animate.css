@@ -120,7 +120,7 @@
     transform: rotate3d(0, 1, 0, 0deg);
   }
   50% {
-    background: url("../img/armory3d.webp") 50% / contain no-repeat;
+    background: url("../img/blender.webp") 50% / contain no-repeat;
     transform: rotate3d(0, 1, 0, 360deg);
   }
   to {
