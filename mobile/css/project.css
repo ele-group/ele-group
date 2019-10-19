@@ -46,9 +46,6 @@ h1 {
 #screenshot_1 {
   margin-top: 60px;
 }
-#download_btn {
-  display: none;
-}
 #sub_btn_project {
     height: 600px;
     width: 600px;
@@ -123,6 +120,7 @@ h1 {
   font-size: 1.5rem;
   text-align: center;
   padding: 0px;
+  padding-top: 20px;
 }
 #supported_unit_1 {
   background: url("../../img/develnext.webp") 50% / contain no-repeat;
@@ -177,6 +175,7 @@ h1 {
   transition: 2s;
 }
 .download_btn {
-  display: none;
-  width: 200px;
+  position: inline-block;
+  margin-left: 15%;
+  width: 70%;
 }
