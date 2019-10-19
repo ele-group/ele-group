@@ -222,7 +222,7 @@ section {
   left: 0;
 }
 .btn_is-open {
-  right: 20px;
+  right: 10px;
 }
 #icon {
   display: inline-block;
@@ -304,7 +304,7 @@ section {
   z-index: 1024;
 }
 #main {
-  height: 90vh;
+  height: 100vh;
   padding-top: 0;
 }
 #main_img {
@@ -316,7 +316,7 @@ section {
   transition: 1s;
 }
 #about {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 #about_img {
   background-image: url("../img/photo.webp");
@@ -499,9 +499,6 @@ section {
 @media (min-width: 1366px) {
   #menu {
     margin-top: 0px;
-  }
-  #about {
-    margin-top: 35px;
   }
   #main_img:hover {
     transform: rotate3d(2, 1, 0, 180deg);
