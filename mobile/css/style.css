@@ -158,44 +158,8 @@ section {
   text-align: center;
   padding-top: 30px;
 }
-#menu {
-  position: fixed;
-  overflow: auto;
-  display: none;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: 0;
-  height: 45px;
-  width: 100%;
-  color: white;
-  background: black;
-  text-align: center;
-  z-index: 2048;
-}
 .scroller {
   overflow: auto;
-}
-#menu ul {
-  margin: 0;
-  padding: 0;
-}
-#menu a {
-  position: relative;
-  padding: 10px 20px;
-  top: 10px;
-  border-radius: 5px;
-  color: whitesmoke;
-  text-decoration: none;
-  transition: 0.5s;
-  padding-top: 0;
-}
-#menu a:hover {
-  color: grey;
-}
-#menu li {
-  display: inline-block;
-  margin: 0 1.5vw;
 }
 .menu_mobile {
   position: fixed;
@@ -205,7 +169,7 @@ section {
   left: -100vw;
   top: 0px;
   background-color: white;
-  transition: 1s;
+  transition: 0.5s;
   text-align: left;
   z-index: 2048;
 }
@@ -215,8 +179,8 @@ section {
   width: 30px;
   right: -40px;
   top: 5px;
-  background: url("../img/menu.webp") 50% / cover;
-  transition: 2s;
+  background: url("../../img/menu.webp") 50% / cover;
+  transition: 1s;
 }
 .menu_is-open {
   left: 0;
@@ -231,7 +195,7 @@ section {
   top: 8px;
   height: 25px;
   width: 25px;
-  background: url("../img/icon.webp") 50% / contain no-repeat;
+  background: url("../../img/icon.webp") 50% / contain no-repeat;
   transition: 0.5s;
 }
 #icon:hover {
@@ -311,21 +275,21 @@ section {
   margin: auto;
   height: 40vh;
   width: 40vh;
-  background: url("../img/logo.webp") 50% / contain no-repeat;
+  background: url("../../img/logo.webp") 50% / contain no-repeat;
   padding-top: 24vh;
   transition: 1s;
 }
-#about {
-  margin-top: 80px;
+#projects {
+  margin-top: 85px;
 }
 #about_img {
-  background-image: url("../img/photo.webp");
+  background-image: url("../../img/photo.webp");
 }
 #blur_text {
   margin: auto;
   width: 80px;
   height: 80px;
-  background: url("../img/blur.webp") 50% / contain no-repeat;
+  background: url("../../img/blur.webp") 50% / contain no-repeat;
 }
 #oh_text {
   position: relative;
@@ -333,30 +297,18 @@ section {
   top: 60px;
   left: 80px;
 }
-#smartbook_img {
-  background-image: url("../img/smartbook.webp");
-}
-#savetheprincess_img {
-  background-image: url("../img/savetheprincess.webp");
-}
-#monuments_img {
-  background-image: url("../img/monuments.webp");
-}
 #keyboard_img {
-  background-image: url("../img/keyboard.webp");
-}
-#cube_img {
-  background-image: url("../img/cube.webp");
+  background-image: url("../../img/keyboard.webp");
 }
 #phone {
-  background-image: url("../img/phone.webp");
+  background-image: url("../../img/phone.webp");
 }
 #email {
-  background-image: url("../img/email.webp");
+  background-image: url("../../img/email.webp");
   margin-left: calc(50vw - 165px);
 }
 #vk {
-  background-image: url("../img/vk.webp");
+  background-image: url("../../img/vk.webp");
   margin-left: calc(50vw - 140px);
 }
 #email h4 {
@@ -370,7 +322,7 @@ section {
   height: 40px;
   width: 40px;
   background: white;
-  background: url("../img/nolike.webp") 50% / cover no-repeat;
+  background: url("../../img/nolike.webp") 50% / cover no-repeat;
   transition: 1s;
 }
 .hide {
@@ -379,136 +331,5 @@ section {
 .hide:checked ~ .like {
   width: 42px;
   height: 42px;
-  background: url("../img/like.webp") 50% / cover no-repeat;
-}
-#vk_community_messages {
-  display: none;
-}
-@media (min-width: 768px) {
-  main {
-    position: relative;
-    width: 100vw;
-  }
-  section {
-    position: relative;
-    height: auto;
-    width: 100vw;
-    border-radius: 0;
-    margin-left: 0;
-  }
-  h1 {
-    font-size: 6rem;
-    padding-top: 0px;
-  }
-  h2 {
-    font-size: 4rem;
-    padding-top: 120px;
-  }
-  h3 {
-    font-size: 3rem;
-  }
-  h4 {
-    font-size: 2rem;
-    padding-left: 150px;
-  }
-  .photo_text {
-    width: 160px;
-    margin-top: 30px;
-  }
-  .photo_text_double {
-    width: 160px;
-    margin-top: 10px;
-  }
-  .photo_text_contacts {
-    width: 250px;
-    margin-top: 25px;
-  }
-  .photo_text_vk {
-    padding-left: 140px;
-  }
-  .description {
-    font-size: 2rem;
-    padding-top: 50px;
-  }
-  .circle_photo {
-    width: 100px;
-    height: 100px;
-    margin-left: calc(50vw - 160px);
-  }
-  .circle_photo_contacts {
-    margin-left: calc(50vw - 220px);
-  }
-  #email {
-    margin-left: calc(50vw - 240px);
-  }
-  #email h4 {
-    padding-left: 145px;
-  }
-  .note {
-    font-size: 1.5em;
-    padding-bottom: 50px;
-    padding-top: 0px;
-    padding-left: 100px;
-  }
-  #main {
-    padding-top: 45px;
-    background: white;
-    width: 100vw;
-    height: 100vh;
-    margin-bottom: 0;
-  }
-  #about {
-    margin-top: -20px;
-  }
-  #overlay {
-    width: 100vw;
-    height: 100vh;
-  }
-  #menu {
-    display: inline-block;
-    margin-top: 0px;
-    width: 100vw;
-  }
-  #menu_mobile {
-    display: none;
-  }
-  #main_img {
-    padding-top: 30vh;
-  }
-  #oh_text {
-    font-size: 2rem;
-    left: 360px;
-  }
-  #blur_text {
-    width: 400px;
-    height: 90px;
-  }
-  .like {
-    right: 40px;
-  }
-  .hr {
-    width: 30vw;
-  }
-  #vk_community_messages {
-    display: inline-block;
-  }
-  #vk {
-    margin-left: calc(50vw - 190px);
-  }
-}
-@media (min-width: 1366px) {
-  #menu {
-    margin-top: 0px;
-  }
-  #about {
-    margin-top: 35px;
-  }
-  #main_img:hover {
-    transform: rotate3d(2, 1, 0, 180deg);
-    height: 50vh;
-    width: 50vh;
-  }
-  .circle_photo:hover {
-    transform: rotate3d(0, 1, 0, 15deg);
-  }
+  background: url("../../img/like.webp") 50% / cover no-repeat;
 }
