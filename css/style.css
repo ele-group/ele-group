@@ -381,9 +381,6 @@ section {
   height: 42px;
   background: url("../img/like.webp") 50% / cover no-repeat;
 }
-#vk_community_messages {
-  display: none;
-}
 @media (min-width: 768px) {
   main {
     position: relative;
@@ -473,7 +470,7 @@ section {
     display: none;
   }
   #main_img {
-    padding-top: 30vh;
+    padding-top: 25vh;
   }
   #oh_text {
     font-size: 2rem;
@@ -488,9 +485,6 @@ section {
   }
   .hr {
     width: 30vw;
-  }
-  #vk_community_messages {
-    display: inline-block;
   }
   #vk {
     margin-left: calc(50vw - 190px);
@@ -508,4 +502,22 @@ section {
   .circle_photo:hover {
     transform: rotate3d(0, 1, 0, 15deg);
   }
+}
+@media (max-height: 480px) {
+  h1 {
+    font-size: 4em;
+    bottom: 60px;
+  }
+  #main_img {
+    top:0px;
+  }
+  #vk_community_messages {
+    display: none;
+  }
+}
+@media (min-height: 480px) {
+  #vk_community_messages {
+    display: inline-block;
+  }
+
 }
