@@ -381,6 +381,9 @@ section {
   height: 42px;
   background: url("../img/like.webp") 50% / cover no-repeat;
 }
+#vk_community_messages {
+  display: none;
+}
 @media (min-width: 768px) {
   main {
     position: relative;
@@ -511,13 +514,9 @@ section {
   #main_img {
     top:0px;
   }
-  #vk_community_messages {
-    display: none;
-  }
 }
-@media (min-height: 480px) {
+@media screen and (min-width: 768px) and (min-height: 480px) {
   #vk_community_messages {
     display: inline-block;
   }
-
 }
