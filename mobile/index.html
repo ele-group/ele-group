@@ -20,6 +20,14 @@
       <nav>
         <ul>
           <li>
+            <a href="#main"><button class="gradient_btn" id="btn_menu_main">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Главная</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
             <a href="#projects"><button class="gradient_btn" id="btn_menu_projects">
                 <div class="sub_btn"></div>
                 <div class="text_btn">Проекты</div>
@@ -91,6 +99,10 @@
       menu_mobile.classList.toggle("menu_is-open");
       btn_mobile.classList.toggle("btn_is-open");
     });
+    btn_menu_main.addEventListener("click", function () {
+      menu_mobile.classList.toggle("menu_is-open");
+      btn_mobile.classList.toggle("btn_is-open");
+    });
     btn_menu_projects.addEventListener("click", function () {
       menu_mobile.classList.toggle("menu_is-open");
       btn_mobile.classList.toggle("btn_is-open");
@@ -104,6 +116,7 @@
     #hellopreloader>p {
       display: none;
     }
+
     #hellopreloader_preload {
       display: block;
       position: fixed;
@@ -128,4 +141,5 @@
     } window.onload = function () { setTimeout(function () { fadeOutnojquery(hellopreloader); }, 1500); }; 
   </script>
 </body>
+
 </html>
