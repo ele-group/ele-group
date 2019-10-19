@@ -205,7 +205,7 @@ section {
   left: -100vw;
   top: 0px;
   background-color: white;
-  transition: 1s;
+  transition: 0.5s;
   text-align: left;
   z-index: 2048;
 }
@@ -216,7 +216,7 @@ section {
   right: -40px;
   top: 5px;
   background: url("../img/menu.webp") 50% / cover;
-  transition: 2s;
+  transition: 1s;
 }
 .menu_is-open {
   left: 0;
@@ -272,7 +272,7 @@ section {
   top: 50%;
   left: 50%;
   animation: gradient_hover 20s linear infinite;
-  transition: 1s linear;
+  transition: 0.25s linear;
   border-radius: 50%;
 }
 .gradient_btn:hover > .sub_btn {

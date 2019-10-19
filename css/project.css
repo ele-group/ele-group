@@ -180,6 +180,15 @@ h1 {
   display: none;
   width: 200px;
 }
+.download_btn_mobile {
+  display: inline-block;
+  margin-left: 15%;
+  margin-bottom: 20px;
+  width: 70%;
+}
+.mobile {
+  display: inline;
+}
 @media (min-width: 768px) {
   main {
     height: auto;
@@ -211,6 +220,9 @@ h1 {
   .screenshot:hover {
     margin-left: 4.5vw;
   }
+  .download_btn_mobile {
+    display: none;
+  }
 }
 @media (min-width: 1152px) {
   #carousel {
@@ -230,6 +242,9 @@ h1 {
     filter: grayscale(0%);
     height: 50vh;
     width: 40vw;
+  }
+  .mobile {
+    display: none;
   }
 }
 @media (min-width: 1366px) {
