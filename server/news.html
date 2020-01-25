@@ -6,34 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <style>
+      .article {
+        padding-top: 40px;
+        padding-left: 20px;
+      }
       .photo {
-        margin: 50px;
-        height: 100px;
-        width: 100px;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
         border-radius: 50%;
         background: 50% / cover no-repeat;
       }
-      .photo > p {
-        width: 600px;
-        padding-left: 150px;
-        padding-top: 50px;
-        font-size: 2rem;
-        font-family: Helvetica, Arial;
+      .photo > strong {
+        display: block;
+        padding-top: 20px;
+        padding-left: 70px;
+        width: 700px;
+        font-size: 1.3rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
-      #photo_1 {
-        background-image: url("https://avatars.mds.yandex.net/get-pdb/1732360/8bb686d8-803d-42e6-9d45-b2ffe9bb112e/s1200?webp=false");
+      p {
+        display: block;
+        padding-left: 20px;
+        font-size: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 25px;
+        width: 700px;
+        text-align: justify;
       }
-      #photo_2 {
-        background-image: url("https://avatars.mds.yandex.net/get-zen_doc/198359/pub_5bfc1df1c18e8b2092ea217a_5bfc1f12414f1b00a938d85b/scale_1200");
+      #end {
+        padding-top: 10px;
+        text-align: center;
+        color: rgb(200, 200, 200);
       }
-      #photo_3 {
-        background-image: url("https://www.nastol.com.ua/pic/201701/2560x1600/nastol.com.ua-201210.jpg");
+      #keyboard {
+        background-image: url("https://ele-group.github.io/img/keyboard.webp");
+      }
+      #cube {
+        background-image: url("https://ele-group.github.io/img/cube.webp");
+      }
+      #smartbook {
+        background-image: url("https://ele-group.github.io/img/smartbook.webp");
+      }
+      #princess {
+        background-image: url("https://ele-group.github.io/img/savetheprincess.webp");
+      }
+      #monuments {
+        background-image: url("https://ele-group.github.io/img/monuments.webp");
+      }
+      #ele {
+        background-image: url("https://github.com/ele-group/application/blob/master/img/rounded-64px.png?raw=true");
       }
     </style>
   </head>
   <body>
-    <div id="photo_1" class="photo"><p>Добавили вкладку с новостями</p></div>
-    <div id="photo_2" class="photo"><p>Исправили ошибку с драконом</p></div>
-    <div id="photo_3" class="photo"><p>Исправили ошибку с запуском</p></div>
+    <div class="article">
+      <div id="ele" class="photo"> <strong>Добавили вкладку с новостями 💬</strong></div>
+      <p>
+        Теперь узнавать о последних новостях стало ещё проще: просто проскрольте вниз.
+      </p>
+    </div>
+    <div class="article">
+      <div id="ele" class="photo"><strong>Исправили много ошибок</strong></div>
+      <p>
+        Приложение переехало на новый сервак и стало адекватно работать, также был улучшен скролл мышкой. Попробуйте сами! 👍
+      </p>
+    </div>
+    <div class="article">
+      <div id="monuments" class="photo"><strong>Обновили то, с чего начали</strong></div>
+      <p>
+        Раньше не работал уровень с дракончиком 🐉, но теперь работает.
+      </p>
+    </div>
+    <p id="end">На этом пока всё. 🤷</p>
   </body>
 </html>
