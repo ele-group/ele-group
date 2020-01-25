@@ -170,3 +170,18 @@
     transform: rotate3d(0, 1, 0, 360deg);
   }
 }
+@keyframes logo_rotate {
+  from {
+    height: 40vh;
+    width: 40vh;
+  }
+  50% {
+    transform: rotate3d(2, 1, 0, 180deg);
+    height: 50vh;
+    width: 50vh;
+  }
+  to {
+    height: 40vh;
+    width: 40vh;
+  }
+}
