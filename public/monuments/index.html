@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" />
+  <link href="../css/project.css" type="text/css" rel="stylesheet" />
+  <link href="../css/monuments.css" type="text/css" rel="stylesheet" />
+  <link href="../css/animate.css" type="text/css" rel="stylesheet" />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <title>Ele Official Site</title>
+</head>
+
+<body>
+  <header>
+    <div id="menu_mobile" class="menu_mobile">
+      <div id="btn_mobile" class="btn_mobile"></div>
+      <div id="space"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="../#main"><button id="btn_mobile_main" class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Главная</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="../#about"><button id="btn_mobile_about" class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">О нас</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="../#projects"><button id="btn_mobile_projects" class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Проекты</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="../#contacts"><button id="btn_mobile_contacts" class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Контакты</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href=".././profile"><button id="btn_mobile_profile" class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Профиль</div>
+              </button></a>
+          </li>
+        </ul>
+    </div>
+    <script>
+      btn_mobile_main.addEventListener("click", function () {
+        menu_mobile.classList.toggle("menu_is-open");
+        btn_mobile.classList.toggle("btn_is-open");
+      });
+      btn_mobile_about.addEventListener("click", function () {
+        menu_mobile.classList.toggle("menu_is-open");
+        btn_mobile.classList.toggle("btn_is-open");
+      });
+      btn_mobile_projects.addEventListener("click", function () {
+        menu_mobile.classList.toggle("menu_is-open");
+        btn_mobile.classList.toggle("btn_is-open");
+      });
+      btn_mobile_contacts.addEventListener("click", function () {
+        menu_mobile.classList.toggle("menu_is-open");
+        btn_mobile.classList.toggle("btn_is-open");
+      });
+      btn_mobile_profile.addEventListener("click", function () {
+        menu_mobile.classList.toggle("menu_is-open");
+        btn_mobile.classList.toggle("btn_is-open");
+      });
+    </script>
+    <div id="menu">
+      <nav>
+        <ul>
+          <li>
+            <div id="icon"><a href="../#main"></a></div>
+          </li>
+          <li><a href="../#about">О нас</a></li>
+          <li><a href="../#projects">Проекты</a></li>
+          <li><a href="../#contacts">Контакты</a></li>
+          <li><a href=".././profile">Профиль</a></li>
+          <li><a href="https://github.com/ele-group/application/raw/master/Ele.exe">Скачать</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="project">
+      <h1>Памятники природы Александровского района</h1>
+      <p class="description">
+        Мой проект «Памятники природы Александровского района» обучит Вас программированию в игровой форме, расскажет о достопримечательностях Александровского района, а также совершенствует навык управления мышкой и использования клавиатуры. Путешественник нашёл карту Александровского района и отправился туда для исследования местных памятников природы. В каждом уровне у персонажа ограниченный запас пищи.
+      </p>
+      <div id="carousel">
+        <div id="screenshot_1" class="screenshot"></div>
+        <div id="screenshot_2" class="screenshot"></div>
+      </div>
+      <p id="center_text" class="description">
+        Thank you very much!
+      </p>
+      <div class="supported">
+        <div id="supported_unit_1" class="supported_unit"></div>
+        <div id="supported_unit_2" class="supported_unit"></div>
+        <div id="supported_unit_3" class="supported_unit"></div>
+        <div id="supported_unit_4" class="supported_unit"></div>
+        <div id="supported_unit_5" class="supported_unit"></div>
+        <div id="supported_unit_6" class="supported_unit"></div>
+        <div id="supported_unit_7" class="supported_unit"></div>
+        <div id="supported_unit_8" class="supported_unit"></div>
+        <div id="supported_unit_9" class="supported_unit"></div>
+      </div>
+      <br>
+      <div class="supported_mobile">
+      </div>
+      <p class="description"><strong style="font-size: 3rem;">Отзывы</strong></p>
+      <input id="area_monuments" class="comment">
+      <br>
+      <a href=""><button id="btn_monuments" class="btn_comment gradient_btn download_btn" style="position: relative;">
+        <div class="sub_btn"></div>
+        <div id="btn_exit" class="text_btn">Опубликовать</div>
+      </button></a>
+      <br>
+      <div class="reviews"><div class="author"><div class="photo_author"></div><p id="monuments_name_1" class="name_author">Lorem</p></div><p id="monuments_content_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nihil libero ab eveniet, error doloribus quam est repellat dicta consequuntur, laborum dolore cum mollitia facilis officia tempore ut sunt numquam.</p></div>
+      <div class="reviews only"><div class="author"><div class="photo_author"></div><p id="monuments_name_2" class="name_author">Lorem</p></div><p id="monuments_content_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nihil libero ab eveniet, error doloribus quam est repellat dicta consequuntur, laborum dolore cum mollitia facilis officia tempore ut sunt numquam.</p></div>
+      <div class="reviews only"><div class="author"><div class="photo_author"></div><p id="monuments_name_3" class="name_author">Lorem</p></div><p id="monuments_content_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nihil libero ab eveniet, error doloribus quam est repellat dicta consequuntur, laborum dolore cum mollitia facilis officia tempore ut sunt numquam.</p></div>
+      <br>
+    </section>
+  </main>
+  <footer>
+    <h2>Вова Вартанян. <br> Все права защищены. ©</h2>
+    <label><input class="hide" type="checkbox">
+      <p>Нажми на сердечко, плиз</p>
+      <div class="like"></div>
+    </label>
+  </footer>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../js/reviews.js"></script>
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+    <!-- VK Widget -->
+    <div id="vk_community_messages"></div>
+  <script type="text/javascript">
+  VK.Widgets.CommunityMessages("vk_community_messages", 167673534, { expandTimeout: "30000", widgetPosition: "left", tooltipButtonText: "Есть вопрос?" });
+  </script>
+  <script>
+    btn_mobile.addEventListener("click", function () {
+      menu_mobile.classList.toggle("menu_is-open");
+      btn_mobile.classList.toggle("btn_is-open");
+    });
+  </script>
+  <!-- Preloader -->
+  <style type="text/css">
+    #hellopreloader>p {
+      display: none;
+    }
+    #hellopreloader_preload {
+      display: block;
+      position: fixed;
+      z-index: 99999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-width: 100px;
+      background: #F64747 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;
+      background-size: 300px;
+    }
+  </style>
+  <div id="hellopreloader">
+    <div id="hellopreloader_preload"></div>
+  </div>
+  <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload"); function fadeOutnojquery(el) {
+      el.style.opacity = 1; var interhellopreloader = setInterval(function () {
+        el.style.opacity = el.style.opacity - 0.05;
+        if (el.style.opacity <= 0.05) { clearInterval(interhellopreloader); hellopreloader.style.display = "none"; }
+      }, 16);
+    } window.onload = function () { setTimeout(function () { fadeOutnojquery(hellopreloader); }, 250); }; 
+  </script>
+</body>
+
+</html>

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="../css/style.css" type="text/css" rel="stylesheet" />
   <link href="../css/project.css" type="text/css" rel="stylesheet" />
-  <link href="../css/cube.css" type="text/css" rel="stylesheet" />
+  <link href="../css/keyboard.css" type="text/css" rel="stylesheet" />
   <link href="../css/animate.css" type="text/css" rel="stylesheet" />
   <link rel="icon" href="../favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -52,6 +52,14 @@
               </button></a>
           </li>
         </ul>
+        <ul>
+          <li>
+            <a href="./index.html"><button id="btn_mobile_profile" class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Профиль</div>
+              </button></a>
+          </li>
+        </ul>
     </div>
     <script>
       btn_mobile_main.addEventListener("click", function () {
@@ -70,6 +78,10 @@
         menu_mobile.classList.toggle("menu_is-open");
         btn_mobile.classList.toggle("btn_is-open");
       });
+      btn_mobile_profile.addEventListener("click", function () {
+        menu_mobile.classList.toggle("menu_is-open");
+        btn_mobile.classList.toggle("btn_is-open");
+      });
     </script>
     <div id="menu">
       <nav>
@@ -80,35 +92,27 @@
           <li><a href="../#about">О нас</a></li>
           <li><a href="../#projects">Проекты</a></li>
           <li><a href="../#contacts">Контакты</a></li>
+          <li><a href="./index.html">Профиль</a></li>
           <li><a href="https://github.com/ele-group/application/raw/master/Ele.exe">Скачать</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <section id="project">
-      <h1>Cube Game</h1>
-      <p class="description">
-        Вам придётся бороться за выживание в кубическом мире!
-      </p>
-      <div id="carousel">
-        <div id="screenshot_1" class="screenshot"></div>
-        <div id="screenshot_2" class="screenshot"></div>
-      </div>
-      <a href="https://github.com/ele-group/cube/raw/master/Cube%20Game.exe"><button class="gradient_btn download_btn">
-        <div class="sub_btn"></div>
-        <div class="text_btn">Скачать</div>
-      </button></a>
-      <p id="center_text" class="description">
-        Thank you very much!
-      </p>
-      <br>
-      <div class="supported_cube">
-      </div>
-      <br>
-    </section>
-
+    <div class="grid">
+      <section id="sign_in">
+        <h1>Мой профиль</h1>
+        <div id="photo"></div>
+        <input class="center_input" type="text" name="name" id="name_account" placeholder="Имя" value="empty" disabled> <br>
+        <input class="center_input" type="url" name="url_vk" id="url_vk_account" placeholder="ВКонтакте" value="empty" disabled> <br>
+        <a href=""><button id="btn_edit" class="gradient_btn download_btn" >
+          <div class="sub_btn"></div>
+          <div id="btn_exit" class="text_btn">Выход</div>
+        </button></a>
+      </section>
+    </div>
   </main>
+  <div class="div"></div>
   <footer>
     <h2>Вова Вартанян. <br> Все права защищены. ©</h2>
     <label><input class="hide" type="checkbox">
@@ -146,6 +150,18 @@
       background-size: 300px;
     }
   </style>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../js/account.js"></script>
+  <script>
+    if (localStorage.flag === 'false') {
+      if (username_account.value === 'empty' && url_vk_account.value === 'empty') window.location.replace("./sign_in.html")
+    } 
+    let user = JSON.parse(localStorage.user)
+    if (localStorage.flag === 'true') {
+        username_account.value = user.data.uusername
+        url_vk_account.value = user.data.uurl_vk
+    }
+  </script>
   <div id="hellopreloader">
     <div id="hellopreloader_preload"></div>
   </div>

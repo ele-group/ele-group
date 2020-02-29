@@ -4,11 +4,13 @@ main {
   margin-bottom: 0px;
   width: 100%;
 }
-footer {
-  margin-top: 60px;
-}
 #menu {
   position: fixed;
+}
+.div {
+  width: 100vw;
+  height: 60px;
+  background-color: white;
 }
 h1 {
   width: 80vw;
@@ -27,6 +29,36 @@ h1 {
   text-align: justify;
   padding-top: 20px;
   padding-left: 20px;
+}
+.only {
+  display: none;
+}
+.reviews {
+  width: 90vw;
+}
+.reviews > p {
+  display: inline-block;
+  text-align: justify;
+  font-size: 1.5rem;
+  padding-left: 20px;
+  overflow: hidden;
+  max-height: 150px;
+}
+.name_author {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+.photo_author {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  background: url("../img/logo_inversion.webp") 50% / contain no-repeat;
 }
 .screenshot {
   display: inline-block;
@@ -124,6 +156,15 @@ h1 {
   text-align: center;
   padding: 0px;
 }
+#photo {
+  height: 60vw;
+  width: 60vw;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: url("../img/logo_inversion.webp") 50% / contain no-repeat;
+}
 #supported_unit_1 {
   background: url("../img/develnext.webp") 50% / contain no-repeat;
 }
@@ -189,12 +230,99 @@ h1 {
 .mobile {
   display: inline;
 }
+input {
+  padding-left: 10px;
+  width: 80vw;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+#btn_sign_in {
+  height: 50px;
+  width: 50vw;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  margin-bottom: 50px;
+}
+#btn_registration {
+  height: 50px;
+  width: 50vw;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  margin-bottom: 50px;
+}
+#btn_edit {
+  height: 50px;
+  width: 50vw;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  margin-bottom: 50px;
+}
+.btn_comment {
+  height: 50px;
+  width: 50vw;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  margin-bottom: 50px;
+}
+.comment {
+  width: 80vw;
+  height: 200px;
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 80vw;
+  height: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 2rem;
+  border-radius: 50px;
+}
+textarea {
+  resize: none;
+}
 @media (min-width: 768px) {
   main {
     height: auto;
   }
+  .comment {
+    margin-left: 100px;
+    height: 200px;
+  }
+  .center_input {
+    margin-left: calc(50vw - 200px);
+  }
+  .div {
+    background-color: rgb(245, 245, 245);
+  }
+  #photo {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+    background: url("../img/logo_inversion.webp") 50% / contain no-repeat;
+  }
+  .grid {
+    height: calc(100vh - 177px);
+  }
   #project {
     height: auto;
+  }
+  #sign_in {
+    height: calc(100vh - 120px);
+  }
+  #registration {
+    height: calc(100vh - 120px);
   }
   h1 {
     font-size: 4rem;
@@ -223,8 +351,76 @@ h1 {
   .download_btn_mobile {
     display: none;
   }
+  input {
+    width: 400px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 2rem;
+    border-radius: 50px;
+  }
+  #btn_sign_in {
+    height: 60px;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 300px;
+  }
+  #btn_registration {
+    height: 60px;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 300px;
+  }
+  #btn_edit {
+    height: 60px;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    left: calc(50vw + 15px);
+  }
+  .btn_comment {
+    height: 60px;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    left: 100px;
+  }
 }
 @media (min-width: 1152px) {
+  .reviews {
+    width: 30vw;
+    margin-left: 15px;
+    display: inline-block;
+  }
+  .reviews > p {
+    display: inline-block;
+    text-align: justify;
+    font-size: 2rem;
+    padding-left: 100px;
+    overflow: hidden;
+    max-height: 300px;
+  }
+  .name_author {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 2.5rem;
+  }
+  .photo_author {
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    background: url("../img/logo_inversion.webp") 50% / contain no-repeat;
+  }
   #carousel {
     margin: auto;
     padding-bottom: 60px;
@@ -267,5 +463,15 @@ h1 {
   }
   #center_text {
     padding-top: 0px;
+  }
+}
+@media (min-width: 1500px) {
+  .website {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+    height: 450px;
+    width: 900px;
+    background: url("../img/website.webp") 50% / contain no-repeat;;
   }
 }

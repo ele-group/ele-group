@@ -7,6 +7,11 @@ html {
   background: white;
   font-family: "PT Sans", sans-serif;
 }
+#title {
+  position: absolute;
+  top: 70vh;
+  width: 100vw;
+}
 h1 {
   color: white;
   font-size: 5rem;
@@ -160,7 +165,7 @@ section {
 }
 #menu {
   position: fixed;
-  overflow: auto;
+  overflow: hidden;
   display: none;
   margin: 0;
   padding: 0;

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" />
+  <link href="../css/project.css" type="text/css" rel="stylesheet" />
+  <link href="../css/keyboard.css" type="text/css" rel="stylesheet" />
+  <link href="../css/animate.css" type="text/css" rel="stylesheet" />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <title>Ele Official Site</title>
+</head>
+
+<body>
+  <header>
+    <div id="menu_mobile" class="menu_mobile">
+      <div id="btn_mobile" class="btn_mobile"></div>
+      <div id="space"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="../#main"><button id="btn_mobile_main" class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Главная</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="../#about"><button id="btn_mobile_about" class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">О нас</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="../#projects"><button id="btn_mobile_projects" class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Проекты</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="../#contacts"><button id="btn_mobile_contacts" class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Контакты</div>
+              </button></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="./index.html"><button id="btn_mobile_profile" class="gradient_btn">
+                <div class="sub_btn"></div>
+                <div class="text_btn">Профиль</div>
+              </button></a>
+          </li>
+        </ul>
+    </div>
+    <script>
+      btn_mobile_main.addEventListener("click", function () {
+        menu_mobile.classList.toggle("menu_is-open");
+        btn_mobile.classList.toggle("btn_is-open");
+      });
+      btn_mobile_about.addEventListener("click", function () {
+        menu_mobile.classList.toggle("menu_is-open");
+        btn_mobile.classList.toggle("btn_is-open");
+      });
+      btn_mobile_projects.addEventListener("click", function () {
+        menu_mobile.classList.toggle("menu_is-open");
+        btn_mobile.classList.toggle("btn_is-open");
+      });
+      btn_mobile_contacts.addEventListener("click", function () {
+        menu_mobile.classList.toggle("menu_is-open");
+        btn_mobile.classList.toggle("btn_is-open");
+      });
+      btn_mobile_profile.addEventListener("click", function () {
+        menu_mobile.classList.toggle("menu_is-open");
+        btn_mobile.classList.toggle("btn_is-open");
+      });
+    </script>
+    <div id="menu">
+      <nav>
+        <ul>
+          <li>
+            <div id="icon"><a href="../#main"></a></div>
+          </li>
+          <li><a href="../#about">О нас</a></li>
+          <li><a href="../#projects">Проекты</a></li>
+          <li><a href="../#contacts">Контакты</a></li>
+          <li><a href="./index.html">Профиль</a></li>
+          <li><a href="https://github.com/ele-group/application/raw/master/Ele.exe">Скачать</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="grid">
+      <section id="registration">
+        <h1>Регистрация</h1>
+        <p id="error" class="description">
+          Впервые в Ele?
+        </p>
+        <br>
+        <input type="text" name="name" id="name" placeholder="Имя"> <br>
+        <input type="url" name="url_vk" id="url_vk" placeholder="ВКонтакте"> <br>
+        <input type="text" name="login" id="login" placeholder="Логин"> <br>
+        <input type="password" name="password" id="password" placeholder="Пароль"> <br>
+        <a><button id="btn_registration" class="gradient_btn download_btn">
+          <div class="sub_btn"></div>
+          <div class="text_btn">Войти</div>
+        </button></a>
+        <div class="website"></div>
+      </section>
+    </div>
+  </main>
+  <div class="div"></div>
+  <footer>
+    <h2>Вова Вартанян. <br> Все права защищены. ©</h2>
+    <label><input class="hide" type="checkbox">
+      <p>Нажми на сердечко, плиз</p>
+      <div class="like"></div>
+    </label>
+  </footer>
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+    <!-- VK Widget -->
+    <div id="vk_community_messages"></div>
+  <script type="text/javascript">
+  VK.Widgets.CommunityMessages("vk_community_messages", 167673534, { expandTimeout: "30000", widgetPosition: "left", tooltipButtonText: "Есть вопрос?" });
+  </script>
+  <script>
+    btn_mobile.addEventListener("click", function () {
+      menu_mobile.classList.toggle("menu_is-open");
+      btn_mobile.classList.toggle("btn_is-open");
+    });
+  </script>
+  <!-- Preloader -->
+  <style type="text/css">
+    #hellopreloader>p {
+      display: none;
+    }
+    #hellopreloader_preload {
+      display: block;
+      position: fixed;
+      z-index: 99999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-width: 100px;
+      background: #F64747 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;
+      background-size: 300px;
+    }
+  </style>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/account.js"></script>
+  <div id="hellopreloader">
+    <div id="hellopreloader_preload"></div>
+  </div>
+  <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload"); function fadeOutnojquery(el) {
+      el.style.opacity = 1; var interhellopreloader = setInterval(function () {
+        el.style.opacity = el.style.opacity - 0.05;
+        if (el.style.opacity <= 0.05) { clearInterval(interhellopreloader); hellopreloader.style.display = "none"; }
+      }, 16);
+    } window.onload = function () { setTimeout(function () { fadeOutnojquery(hellopreloader); }, 250); }; 
+  </script>
+</body>
+
+</html>
