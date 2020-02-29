@@ -4,6 +4,8 @@ let app = express()
 let fs = require("fs")
 app.use('/', express.static('public'))
 
+const PORT = process.env.PORT || 3000
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
@@ -14,7 +16,6 @@ function randomInteger(min, max) {
   let rand = min + Math.random() * (max + 1 - min);
   return Math.floor(rand);
 }
-
 
 class Review {
   constructor(username, content) {
@@ -185,6 +186,6 @@ app.post("/login", function(req, res) {
   res.send(user)
 })
 
-app.listen(3000, function() {
-    console.log('app run on 3000')
+app.listen(PORT, function() {
+    console.log('app run on ' + PORT)
 })
